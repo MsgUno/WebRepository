@@ -1,0 +1,440 @@
+
+/*Content*/
+/*Padding Separación entre el borde y el contenido de la caja*/
+/*Border Espacio entre el elemento y el exterior*/
+/*Margin Espacio exterior*/
+
+/* google font*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+   margin: 0;
+   padding: 0;
+}
+
+
+body{
+
+  font-family: "Poppins", sans-serif;
+  
+  font-style: normal;
+  
+    background-size: cover;
+    background-color: azure;
+    
+}
+   /*Header*/
+.ContenedorHeader{
+    width:100% ;
+    color: black;
+    font-size: 20px;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: center;
+    
+}
+/*Social*/
+
+  
+.section{
+  width: 80%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+/*MenuProductos*/
+.contenedor-desplegable {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.contenido-adicional {
+  border-radius: 8px; /* Bordes redondeados */
+  border: 2px solid #3498db; /* Borde sólido azul */
+  transition: border-color 0.3s; /* Transición suave para el color del borde */
+  display: none;
+  position: absolute;
+  background-color: #92b3b2;
+  width: 400px; /* Ajusta el ancho según tu preferencia */
+  padding: 20px; /* Añade espacio interno */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  flex-wrap: wrap; /* Envuelve los elementos en varias líneas si es necesario */
+  margin-top: 40px;
+  align-items: center;
+ 
+}
+.contenedor-desplegable:hover .contenido-adicional {
+  display: flex; /* Mostrar el contenido al hacer hover */
+  
+  
+  
+}
+
+
+
+.BotonMenu{
+  
+  background: none;
+    border: none;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+    outline: none;
+}
+
+
+.contenido-adicional a{
+  display: inline;
+  text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    background-color: #8cb1c9;
+    height: 20%;
+
+    
+}
+.contenido-adicional span {
+  text-align: center; /* Centra el texto horizontalmente */
+  display: block; /* Hace que el texto sea un elemento de bloque */
+}
+.contenido-adicional a span:hover{
+  background-color: bisque;
+  border-radius: 8px; /* Bordes redondeados */
+    border: 2px solid #3498db; /* Borde sólido azul */
+    transition: border-color 0.3s; /* Transición suave para el color del borde */
+}
+.contenido-adicional img {
+  width: 100px; /* Ancho deseado */
+  height: 100px; /* Alto deseado */
+  object-fit: cover; /* Mantiene la relación de aspecto y cubre el espacio especificado */
+}
+.contenido-adicional img:hover{
+  transform: scale(1.2);
+  transition-property:all;
+  transition-duration: 1s;
+}
+
+.ImgMenu{
+  vertical-align: middle; /* Alinear verticalmente la imagen y el texto */
+  margin-right: 10px; /* Espacio entre la imagen y el texto */
+  margin-left: 10px;
+  margin-top: 10px;
+  height: 50%;
+  display: block;
+  margin-top: 10px;
+  border-radius: 8px; /* Bordes redondeados */
+    border: 2px solid #3498db; /* Borde sólido azul */
+    transition: border-color 0.3s; /* Transición suave para el color del borde */
+}
+.ContainerMenuu{
+  width: 100%;
+  color: white; /* Color del texto interior */
+  background-color: #cdf2e5;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  padding: 20px 0px;
+}
+.nav{
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  
+  
+}
+
+
+.icon img{
+  width: 50%; /* La imagen ocupará el 50% del ancho de su contenedor */
+    height: auto; /* Esto mantiene la proporción de la imagen */
+}
+
+
+
+
+
+
+
+
+
+   
+
+
+
+  .nosotros{
+    margin-top: 80px;
+    margin-right: 180px;
+    margin-left: 180px;
+    margin-bottom: 80px;/*parte de abajo*/
+
+
+  }
+  
+ 
+ 
+  /*Seccion informativa*/
+.SeccionInfo{
+  background-color: antiquewhite;
+}
+  .ImagenesInfo {
+    margin-top: 12px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+
+.TextoInfo p{
+ font-size: 12px
+ 
+ 
+}
+.TextoInfo{
+  width: 300px;
+  height: 300px;
+}
+
+.Ciclo img {
+  width: 300px;
+  height: 300px;
+}
+
+  
+  /* Imagenes de los productos*/
+
+
+.ProductosGrid{
+  
+  display: grid;
+  margin: 100px auto;
+  border-radius: 8px; /* Bordes redondeados */
+}
+
+
+  .ImagenesGrid{
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    margin: 0 auto;
+    border-radius: 8px; /* Bordes redondeados */
+    border: 2px solid #3498db; /* Borde sólido azul */
+    transition: border-color 0.3s;
+    align-items: center;
+
+    
+  }
+  .ProductosGrid div{
+    display: inline-block;
+    width: auto;
+    margin: 10px;
+  }
+  .ItemGrid{
+    position: relative;
+  }
+  .TextoGrid{
+    position: absolute;
+    top: 10px; /* Ajusta la posición vertical */
+    left: 10px; /* Ajusta la posición horizontal */
+    background-color: rgba(255, 255, 255, 0.7); /* Fondo semi-transparente para legibilidad */
+    padding: 5px; /* Espacio alrededor del texto */
+    border: 2px solid #3498db; /* Borde sólido azul */
+    transition: border-color 0.3s;
+
+  }
+  /* Footer*/
+  .Redes p{
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    border: solid black;
+  }
+  .Redes ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    
+  }
+
+
+  .FooterContainer{
+    background-color: #cdf2e5;
+   
+    display: flex;
+    bottom: 0;
+    position: fixed;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+    
+  }
+  .NavFooter{
+    width: 30%;
+  }
+  .ListaFooter{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    
+   
+    
+  }
+
+
+/*POSITION-relative absolute fixed sticky*/
+/*ralative mueve el elemento en relacion a donde normalmente aparece*/
+
+/*Espacio con mucho grid*/
+.GridContainer{
+  width: 80%;
+  margin: 12px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 200px 600px 150px;
+  grid-template-areas: "GridArriba GridArriba GridArriba"
+  "GridAside SectionGrid SectionGrid"
+  "AbajoGrid AbajoGrid AbajoGrid"
+  ;
+}
+.Arriba{
+  background-color: #deffa0;
+  grid-area: GridArriba;
+}
+.Publicidad{
+  background-color: #feffda;
+  grid-area: GridAside;
+}
+.GridProductos{
+  background-color: #b0f2c2;
+  grid-area: SectionGrid;
+}
+.Abajo{
+  background-color: #f9e0e0;
+  grid-area:AbajoGrid ;
+}
+
+/* Gallery de productos Maquinas*/
+.GalleryContainer{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-auto-rows: 450px;
+  padding: 20px;
+  gap: 20px;
+  
+}
+.GalleryImg{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition-property: all;
+  transition-duration: 1s;
+}
+.GalleryItem{
+  position: relative;
+}
+.GalleryTitle{
+  position: absolute;
+  width: 100%;
+  top: 10px; /* Ajusta la posición vertical */
+  padding: 5px 0;
+  background-color: rgba(255, 255, 255, 0.6); /* Fondo semi-transparente para legibilidad */
+  padding: 5px; /* Espacio alrededor del texto */
+  
+}
+.GalleryTitle:hover{
+  position: absolute;
+  width: 100%;
+  top: 10px; /* Ajusta la posición vertical */
+  background-color: rgba(255, 255, 255, 0.158); /* Fondo semi-transparente para legibilidad */
+  padding: 5px; /* Espacio alrededor del texto */
+  
+
+}
+.GalleryImg:hover{
+  transform: scale(1.05);
+
+  z-index: 1;
+}
+
+.ImgAnimation :hover {
+  animation: TextoMov 3s;
+
+
+}
+
+.animate__animated.animate__fadeInBottomRight {
+  --animate-duration: 3s;
+}
+/*Responsive*/
+@media (max-width: 450px){
+  .GalleryContainer{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 450px;
+    padding: 20px;
+    gap: 15px;
+  }
+  .ItemGrid{
+    position: relative;
+    grid-column: span 1;
+    grid-column: span 1;
+
+  }
+  .GalleryTitle{
+    font-size: 15px;
+  }
+  .GalleryTitle:hover{
+    position: absolute;
+    width: 100%;
+    top: 10px; /* Ajusta la posición vertical */
+    background-color: rgba(255, 255, 255, 0.158); /* Fondo semi-transparente para legibilidad */
+    padding: 5px; /* Espacio alrededor del texto */
+    
+  
+  }
+  .logo{
+    display: none;
+  }
+}
+/*Responsive*/
+@media (min-width: 451px) and (max-width: 960px){
+  .GalleryContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 450px;
+    padding: 20px;
+    gap: 15px;
+  }
+  .ItemGrid{
+    position: relative;
+    grid-column: span 1;
+    grid-column: span 1;
+
+  }
+  .GalleryTitle:hover{
+    position: absolute;
+    width: 100%;
+    top: 10px; /* Ajusta la posición vertical */
+    background-color: rgba(255, 255, 255, 0.158); /* Fondo semi-transparente para legibilidad */
+    padding: 5px; /* Espacio alrededor del texto */
+    
+  
+  }
+  .GalleryTitle{
+    font-size: 18px;
+  }
+  .img9{
+    grid-row: span 1;
+    grid-column: span 2;
+  }
+  .logo{
+    display: none;
+  }
+
+}
+/*Burger*/
