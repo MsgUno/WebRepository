@@ -44,6 +44,18 @@ body{
   justify-content: space-between;
 }
 /*MenuProductos*/
+
+.NavSection{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+
+}
+.ElNav{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
 .contenedor-desplegable {
   position: relative;
   display: flex;
@@ -457,3 +469,8 @@ body{
 
 }
 /*Burger*/
+.ImgCarr{
+  width: 50%;
+  height: 300px;
+  object-fit: cover;
+}

@@ -10,6 +10,8 @@
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
       </head>
     <title >CorporaciónCapsula
     </title>
@@ -46,44 +48,56 @@
 
      <!--Titulo de pagina elemento en bloque-->
        <!--Zona navegable-->
-      <section class="ContainerMenuu">
-       <nav class="nav"><!--Menu de header-->
-           <div><a href="index.html">Inicio</a></div>
-           <div class="contenedor-desplegable">
-              <!-- Elemento que se activa con hover -->
-              <button class="BotonMenu">Productos</button>
-              <!-- Contenido adicional que se mostrará al hacer hover -->
-              <div class="contenido-adicional">
-                <a class="AMenu" href="cafeteras.html">
-                  <span>Café</span>
-                  <img class="ImgMenu" src="Imagenes/Gallery7.jpg" alt=""></a>
-                
-                <a class="AMenu" href="cafeteras.html">
-                  <span>Maquinas</span>
-                  <img class="ImgMenu" src="Imagenes/Maquina.webp" alt="Maquina"> </a>
+      <section class="NavSection">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary ElNav">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle BotonMenu" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Productos
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                </li>
+              </ul>
+                </li>
               
-                <a href="cafeteras.html">
-                  <span>Vasos</span>
-                  <img class="ImgMenu" src="Imagenes/vaso_termico_contigo_westloop_10_imagen13.jpg" alt="Vasos">
-              </a>
-              </div>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
             </div>
-            
-            <div class="icon">
-              <img src="Imagenes/CarritoCompras.png" alt="a">
           </div>
+        </nav>
           
-          
-          </nav>
-       </section> 
+      </section>
+       
+<section class="Carrusel">
+    
+
+</section>
 
 
-    <section class="SeccionInfo">
-              <section class="ImagenesInfo">
-               <img class="animate__animated animate__fadeInRightBig imgarriba" src="Imagenes/cafe.jpg" alt="imagentest" >
-              </section>
-
-    </section>
+   
     <section class="GridContainer">
         <div class="Arriba">
             Las mejores ofertas
@@ -136,5 +150,20 @@
    </nav>
 
 </footer>  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </body>
 </html>
